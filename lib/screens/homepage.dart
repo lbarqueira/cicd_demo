@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({this.title});
+  const MyHomePage({this.title});
 
   final String title;
 
@@ -28,7 +28,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text(
+            const Text(
               'You have pushed the button this many times:',
             ),
             Text(
@@ -41,14 +41,13 @@ class _MyHomePageState extends State<MyHomePage> {
       floatingActionButton: GestureDetector(
         onDoubleTap: () {
           setState(() {
-            print('setstate');
             _counter = 0;
           });
         },
         child: FloatingActionButton(
           onPressed: _incrementCounter,
           tooltip: 'Increment',
-          child: Icon(Icons.favorite_border)
+          child: const Icon(Icons.favorite_border)
         ),
       ),
     );

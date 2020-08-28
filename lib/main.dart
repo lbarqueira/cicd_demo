@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(title: 'CI / CD Demo Home Page'),
+      home: const MyHomePage(title: 'CI / CD Demo Home Page'),
     );
   }
 }
