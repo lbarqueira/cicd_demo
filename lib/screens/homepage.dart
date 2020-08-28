@@ -39,14 +39,13 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       floatingActionButton: GestureDetector(
-        onDoubleTap: () {
+        onLongPress: () {
           setState(() {
             _counter = 0;
           });
         },
         child: FloatingActionButton(
           onPressed: _incrementCounter,
-          tooltip: 'Increment',
           child: const Icon(Icons.favorite_border)
         ),
       ),
