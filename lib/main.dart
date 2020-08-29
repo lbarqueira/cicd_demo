@@ -1,9 +1,12 @@
+import 'package:cicd_demo/utils/theme.dart';
 import 'package:flutter/material.dart';
 import 'screens/homepage.dart';
 
 
 void main() {
-  runApp(MyApp());
+  runApp(
+    MyApp(),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -11,11 +14,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        accentColor: Colors.amber,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
+      debugShowCheckedModeBanner: false,
+      title: 'CI/CD DEMO',
+      theme: themeData,
       home: const MyHomePage(title: 'CI / CD Demo Home Page'),
     );
   }

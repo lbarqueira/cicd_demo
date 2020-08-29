@@ -21,22 +21,41 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      extendBodyBehindAppBar: true,
       appBar: AppBar(
+        centerTitle: true,
+        elevation:0.0,
+        backgroundColor: Colors.transparent,
         title: Text(widget.title),
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
+      body: Stack(
+        children: [
+          Image(
+            image: const AssetImage('assets/images/lugh.jpg'),
+            width: MediaQuery.of(context).size.width,
+            height: MediaQuery.of(context).size.height,
+            fit: BoxFit.cover,
+          ),
+          Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  'How many times I like my dog:',
+                  style: Theme.of(context).textTheme.headline1,
+                  textAlign: TextAlign.center,
+                ),
+                Text(
+                  '$_counter',
+                  style: Theme.of(context).textTheme.headline1.copyWith(
+                        fontSize: 60.0,
+                      ),
+                  textAlign: TextAlign.center,
+                ),
+              ],
             ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headline4,
-            ),
-          ],
-        ),
+          ),
+        ],
       ),
       floatingActionButton: GestureDetector(
         onLongPress: () {
@@ -46,7 +65,7 @@ class _MyHomePageState extends State<MyHomePage> {
         },
         child: FloatingActionButton(
           onPressed: _incrementCounter,
-          child: const Icon(Icons.favorite_border)
+          child: const Icon(Icons.favorite_border),
         ),
       ),
     );
