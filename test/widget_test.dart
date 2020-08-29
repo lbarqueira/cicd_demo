@@ -6,9 +6,10 @@
 // tree, read text, and verify that the values of widget properties are correct.
 
 
+import 'package:cicd_demo/screens/my_app.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:cicd_demo/main.dart';
+
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
