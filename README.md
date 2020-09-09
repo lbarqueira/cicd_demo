@@ -19,3 +19,7 @@ https://blog.codemagic.io/getting-started-with-codemagic/
 ## Snapshots
 
 [![lugh-mobile.png](https://i.postimg.cc/h4XBWwgp/lugh-mobile.png)](https://postimg.cc/V5PTXKJC)
+
+## Create a New Dev branch 
+
+https://www.thegeekstuff.com/2019/03/git-create-dev-branch-and-merge/
