@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'CI/CD DEMO',
       theme: themeData,
-      home: const MyHomePage(title: 'CI / CD Demo Home Page'),
+      home: const MyHomePage(title: "Lugh D'Alma Castrense"),
     );
   }
 }
